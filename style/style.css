@@ -1,0 +1,503 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+@font-face {
+  font-family: 'BPG Nino Mkhedruli Book',sans-serif;
+  src: url("../fonts/bpg-nino-mkhedruli-book-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-nino-mkhedruli-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-nino-mkhedruli-book-webfont.woff2") format("woff2"), url("../fonts/bpg-nino-mkhedruli-book-webfont.woff") format("woff"), url("../fonts/bpg-nino-mkhedruli-book-webfont.ttf") format("truetype"), url("../fonts/bpg-nino-mkhedruli-book-webfont.svg#bpg_nino_mkhedruli_bookregular") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'BPG Glaho WEB Caps',sans-serif;
+  src: url("../fonts/bpg-glaho-web-caps-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/bpg-glaho-web-caps-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/bpg-glaho-web-caps-webfont.woff2") format("woff2"), url("../fonts/bpg-glaho-web-caps-webfont.woff") format("woff"), url("../fonts/bpg-glaho-web-caps-webfont.ttf") format("truetype"), url("../fonts/bpg-glaho-web-caps-webfont.svg#bpg_glaho_web_capsregular") format("svg");
+  /* Legacy iOS */ }
+
+html section#making .container, html section#my-works .container, html section#about-me .container, html section#contact .container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto; }
+
+html {
+  scroll-behavior: smooth; }
+  html .header {
+    padding: 30px 30px;
+    position: fixed;
+    z-index: 999;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: ""; }
+    html .header .logo {
+      width: 160px; }
+    html .header .navbar {
+      display: flex;
+      justify-content: "";
+      align-items: flex-end; }
+      @media (max-width: 1024px) {
+        html .header .navbar {
+          display: none; } }
+      html .header .navbar .nav-ol {
+        display: flex;
+        justify-content: space-between;
+        align-items: ""; }
+        html .header .navbar .nav-ol .nav-a {
+          margin-left: 30px;
+          color: #000000;
+          font-size: 20px;
+          font-family: 'BPG Glaho WEB Caps',sans-serif; }
+          html .header .navbar .nav-ol .nav-a:hover {
+            cursor: pointer;
+            color: #B8EDF8;
+            transition: all 0.1s ease-out; }
+        html .header .navbar .nav-ol .active {
+          color: #B8EDF8; }
+    html .header .burger-icon {
+      display: none; }
+      @media (max-width: 1024px) {
+        html .header .burger-icon {
+          display: block; } }
+      html .header .burger-icon .burger-menu {
+        width: 35px; }
+  html section#main {
+    padding-top: 100px; }
+    html section#main .background {
+      height: 600px; }
+      @media (max-width: 1315px) {
+        html section#main .background {
+          height: 400px; } }
+      @media (max-width: 930px) {
+        html section#main .background {
+          height: 300px; } }
+      @media (max-width: 680px) {
+        html section#main .background {
+          height: 250px; } }
+      @media (max-width: 575px) {
+        html section#main .background {
+          height: 200px; } }
+      @media (max-width: 460px) {
+        html section#main .background {
+          display: none; } }
+      html section#main .background .bg {
+        width: 100%;
+        height: 100%;
+        background-image: url(../Resource/images/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover; }
+        html section#main .background .bg .sec-overlay {
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          html section#main .background .bg .sec-overlay .text h1 {
+            font-size: 40px;
+            color: #fff;
+            font-family: 'BPG Glaho WEB Caps',sans-serif; }
+            @media (max-width: 990px) {
+              html section#main .background .bg .sec-overlay .text h1 {
+                font-size: 34px; } }
+            @media (max-width: 750px) {
+              html section#main .background .bg .sec-overlay .text h1 {
+                font-size: 24px; } }
+          html section#main .background .bg .sec-overlay .text h3 {
+            font-size: 30px;
+            color: #fff;
+            font-family: 'BPG Nino Mkhedruli Book',sans-serif;
+            text-align: center;
+            margin-top: 15px; }
+            @media (max-width: 990px) {
+              html section#main .background .bg .sec-overlay .text h3 {
+                font-size: 28px; } }
+            @media (max-width: 750px) {
+              html section#main .background .bg .sec-overlay .text h3 {
+                font-size: 20px; } }
+  html section#making {
+    padding-top: 60px; }
+    @media (max-width: 1200px) {
+      html section#making .container {
+        width: 930px; } }
+    @media (max-width: 990px) {
+      html section#making .container {
+        width: 690px; } }
+    @media (max-width: 750px) {
+      html section#making .container {
+        width: 100%;
+        padding: 0 30px; } }
+    html section#making .container .making-text {
+      display: flex;
+      justify-content: center;
+      align-items: ""; }
+      html section#making .container .making-text h2 {
+        font-size: 24px;
+        color: #000000;
+        font-family: 'BPG Glaho WEB Caps',sans-serif; }
+      html section#making .container .making-text .divider {
+        display: flex;
+        justify-content: center;
+        align-items: ""; }
+        html section#making .container .making-text .divider .short-heading-divider-black {
+          width: 90px;
+          border: 2px #000000 solid;
+          margin-top: 10px; }
+    html section#making .container .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: "";
+      padding-top: 60px;
+      flex-wrap: wrap; }
+      html section#making .container .wrapper .content {
+        width: 265px;
+        border: 1px solid #B2B2B2;
+        padding: 30px;
+        box-shadow: 0 2px 12px 0 #666666;
+        transition: all 0.2s linear 0.1s; }
+        @media (max-width: 1200px) {
+          html section#making .container .wrapper .content {
+            width: 450px;
+            margin-bottom: 30px; } }
+        @media (max-width: 990px) {
+          html section#making .container .wrapper .content {
+            width: 330px; } }
+        @media (max-width: 750px) {
+          html section#making .container .wrapper .content {
+            width: 100%; } }
+        html section#making .container .wrapper .content:hover {
+          cursor: pointer;
+          transform: scale(1.1); }
+        html section#making .container .wrapper .content .icon {
+          display: flex;
+          justify-content: center;
+          align-items: ""; }
+          html section#making .container .wrapper .content .icon .inner img {
+            height: 75px; }
+          html section#making .container .wrapper .content .icon .inner .divider {
+            display: flex;
+            justify-content: center;
+            display: flex;
+            justify-content: center;
+            align-items: ""; }
+            html section#making .container .wrapper .content .icon .inner .divider .short-heading-divider-aqua {
+              width: 25px;
+              border: 2px solid #B8EDF8;
+              margin-top: 15px; }
+        html section#making .container .wrapper .content .desc {
+          text-align: center;
+          padding-top: 15px; }
+          html section#making .container .wrapper .content .desc h4 {
+            font-size: 18px;
+            font-family: 'BPG Glaho WEB Caps',sans-serif;
+            color: #000000; }
+          html section#making .container .wrapper .content .desc p {
+            font-size: 16px;
+            color: #666666;
+            font-family: 'BPG Nino Mkhedruli Book',sans-serif;
+            margin-top: 15px; }
+  html section#my-works {
+    padding: 60px 0; }
+    html section#my-works .worked-text {
+      display: flex;
+      justify-content: center;
+      align-items: ""; }
+      html section#my-works .worked-text h2 {
+        font-size: 24px;
+        color: #000000;
+        font-family: 'BPG Glaho WEB Caps',sans-serif; }
+      html section#my-works .worked-text .divider {
+        display: flex;
+        justify-content: center;
+        align-items: ""; }
+        html section#my-works .worked-text .divider .short-heading-divider-black {
+          width: 90px;
+          border: 2px #000000 solid;
+          margin-top: 10px; }
+    @media (max-width: 1200px) {
+      html section#my-works .container {
+        width: 930px; } }
+    @media (max-width: 990px) {
+      html section#my-works .container {
+        width: 690px; } }
+    @media (max-width: 750px) {
+      html section#my-works .container {
+        width: 100%;
+        padding: 0 30px; } }
+    html section#my-works .container .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: "";
+      flex-wrap: wrap;
+      padding-top: 30px; }
+      html section#my-works .container .wrapper .card {
+        border: 2px solid #B8EDF8;
+        margin-top: 25px;
+        width: 360px;
+        position: relative; }
+        @media (max-width: 1200px) {
+          html section#my-works .container .wrapper .card {
+            width: 450px;
+            margin-bottom: 30px; } }
+        @media (max-width: 990px) {
+          html section#my-works .container .wrapper .card {
+            width: 330px; } }
+        @media (max-width: 750px) {
+          html section#my-works .container .wrapper .card {
+            width: 100%; } }
+        html section#my-works .container .wrapper .card:hover {
+          cursor: pointer; }
+          html section#my-works .container .wrapper .card:hover .card-overlay {
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+            border-radius: 2px; }
+        html section#my-works .container .wrapper .card img {
+          width: 100%; }
+        html section#my-works .container .wrapper .card .card-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          border-radius: 50%;
+          background: #B8EDF8;
+          opacity: 0.9;
+          -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+          transform: scale(0);
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s; }
+          html section#my-works .container .wrapper .card .card-overlay p {
+            color: #fff;
+            font-size: 15px;
+            text-align: center;
+            font-family: 'BPG Glaho WEB Caps';
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+          html section#my-works .container .wrapper .card .card-overlay img {
+            width: 45px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  html section#about-me {
+    padding: 60px 0;
+    background: #F1F1F1; }
+    @media (max-width: 1200px) {
+      html section#about-me .container {
+        width: 930px; } }
+    @media (max-width: 990px) {
+      html section#about-me .container {
+        width: 690px; } }
+    @media (max-width: 750px) {
+      html section#about-me .container {
+        width: 100%;
+        padding: 0 30px; } }
+    html section#about-me .container .wrapper {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      align-items: ""; }
+      html section#about-me .container .wrapper .about-block-left {
+        position: relative;
+        width: 370px; }
+        @media (max-width: 990px) {
+          html section#about-me .container .wrapper .about-block-left {
+            width: 96%; } }
+        html section#about-me .container .wrapper .about-block-left .about-img-background {
+          width: 100%;
+          height: 325px;
+          background: #B8EDF8;
+          position: absolute;
+          top: 30px;
+          left: 30px; }
+        html section#about-me .container .wrapper .about-block-left .about-img {
+          background-image: url(../Resource/images/person.png);
+          background-size: cover;
+          width: 100%;
+          height: 325px;
+          position: absolute;
+          top: 0;
+          left: 0; }
+      html section#about-me .container .wrapper .about-block-right {
+        width: 550px; }
+        @media (max-width: 1200px) {
+          html section#about-me .container .wrapper .about-block-right {
+            width: 410px; } }
+        @media (max-width: 990px) {
+          html section#about-me .container .wrapper .about-block-right {
+            width: 100%;
+            margin-top: 425px; } }
+        html section#about-me .container .wrapper .about-block-right .about-text h2 {
+          font-size: 24px;
+          color: #000000;
+          font-family: 'BPG Glaho WEB Caps',sans-serif; }
+        html section#about-me .container .wrapper .about-block-right .about-text .divider .short-heading-divider-black {
+          width: 90px;
+          border: 2px #000000 solid;
+          margin-top: 10px; }
+        html section#about-me .container .wrapper .about-block-right .desc {
+          width: 100%;
+          padding-top: 60px; }
+          html section#about-me .container .wrapper .about-block-right .desc p {
+            font-size: 16px;
+            font-family: 'BPG Nino Mkhedruli Book',sans-serif;
+            margin-bottom: 20px;
+            line-height: initial; }
+            @media (max-width: 990px) {
+              html section#about-me .container .wrapper .about-block-right .desc p {
+                font-size: 14px; } }
+  html section#contact {
+    padding: 60px 0 100px 0;
+    background: #B8EDF8; }
+    html section#contact .container {
+      display: flex;
+      justify-content: center;
+      align-items: ""; }
+      @media (max-width: 1200px) {
+        html section#contact .container {
+          width: 930px; } }
+      @media (max-width: 990px) {
+        html section#contact .container {
+          width: 690px; } }
+      @media (max-width: 750px) {
+        html section#contact .container {
+          width: 100%;
+          padding: 0 30px; } }
+      html section#contact .container .center-block {
+        width: 555px; }
+        html section#contact .container .center-block .contact-text {
+          display: flex;
+          justify-content: center;
+          display: flex;
+          justify-content: center;
+          align-items: ""; }
+          html section#contact .container .center-block .contact-text h2 {
+            font-size: 24px;
+            color: #000000;
+            font-family: 'BPG Glaho WEB Caps',sans-serif; }
+          html section#contact .container .center-block .contact-text .divider {
+            display: flex;
+            justify-content: center;
+            align-items: ""; }
+            html section#contact .container .center-block .contact-text .divider .short-heading-divider-black {
+              width: 90px;
+              border: 2px #000000 solid;
+              margin-top: 10px; }
+        html section#contact .container .center-block .contact-input {
+          padding: 60px 0 100px 0; }
+          html section#contact .container .center-block .contact-input p {
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #989898;
+            font-family: 'BPG Nino Mkhedruli Book',sans-serif; }
+            html section#contact .container .center-block .contact-input p input {
+              width: 100%;
+              border: 2px solid #333333;
+              height: 40px;
+              background: none;
+              padding-left: 25px; }
+            html section#contact .container .center-block .contact-input p textarea {
+              width: 100%;
+              border: 2px solid #333333;
+              background: none;
+              padding: 10px 0 0 25px;
+              height: 100px; }
+          html section#contact .container .center-block .contact-input .send-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+            html section#contact .container .center-block .contact-input .send-button span {
+              font-size: 14px;
+              color: #666666;
+              font-family: 'BPG Nino Mkhedruli Book',sans-serif; }
+            html section#contact .container .center-block .contact-input .send-button button {
+              background: #fff;
+              height: 30px;
+              border: 1px solid #7EC4CE;
+              padding: 5px 10px 0 10px; }
+              @media (max-width: 1200px) {
+                html section#contact .container .center-block .contact-input .send-button button {
+                  background: #7EC4CE; } }
+              html section#contact .container .center-block .contact-input .send-button button:hover {
+                cursor: pointer;
+                transition: all 0.3s;
+                background: #7EC4CE; }
+                html section#contact .container .center-block .contact-input .send-button button:hover a {
+                  color: #fff; }
+              html section#contact .container .center-block .contact-input .send-button button a {
+                font-size: 14px;
+                color: #7EC4CE;
+                font-family: 'BPG Glaho WEB Caps',sans-serif; }
+                @media (max-width: 1024px) {
+                  html section#contact .container .center-block .contact-input .send-button button a {
+                    color: #fff; } }
+  html footer {
+    width: 100%;
+    background: #313332;
+    padding: 30px; }
+    html footer .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      html footer .container p {
+        font-size: 14px;
+        color: #fff;
+        font-family: 'BPG Nino Mkhedruli Book',sans-serif; }
+        @media (max-width: 550px) {
+          html footer .container p {
+            font-size: 12px; } }
+        @media (max-width: 400px) {
+          html footer .container p {
+            font-size: 8px; } }
+      html footer .container img {
+        width: 160px; }
+        @media (max-width: 550px) {
+          html footer .container img {
+            width: 80px; } }
+        @media (max-width: 400px) {
+          html footer .container img {
+            width: 60px; } }
